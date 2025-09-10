@@ -237,7 +237,7 @@
             grpEtiqueta.Location = new Point(0, 423);
             grpEtiqueta.Name = "grpEtiqueta";
             grpEtiqueta.Padding = new Padding(5);
-            grpEtiqueta.Size = new Size(994, 176);
+            grpEtiqueta.Size = new Size(994, 170);
             grpEtiqueta.TabIndex = 2;
             grpEtiqueta.TabStop = false;
             grpEtiqueta.Text = "Vista Previa - Etiqueta de Envío";
@@ -252,7 +252,7 @@
             panelEtiqueta.Dock = DockStyle.Fill;
             panelEtiqueta.Location = new Point(5, 25);
             panelEtiqueta.Name = "panelEtiqueta";
-            panelEtiqueta.Size = new Size(984, 146);
+            panelEtiqueta.Size = new Size(984, 140);
             panelEtiqueta.TabIndex = 0;
             // 
             // lblEtiqueta
@@ -264,7 +264,7 @@
             lblEtiqueta.Location = new Point(0, 0);
             lblEtiqueta.Name = "lblEtiqueta";
             lblEtiqueta.Padding = new Padding(10);
-            lblEtiqueta.Size = new Size(982, 144);
+            lblEtiqueta.Size = new Size(982, 138);
             lblEtiqueta.TabIndex = 0;
             lblEtiqueta.Text = "Seleccione un pedido para generar la etiqueta de envío.\r\n\r\nLa etiqueta incluirá:\r\n• Datos del destinatario\r\n• Dirección de entrega\r\n• Número de paquete\r\n• Código de barras";
             // 
@@ -483,10 +483,10 @@
             // 
             panelBottom.Controls.Add(flowBottom);
             panelBottom.Dock = DockStyle.Bottom;
-            panelBottom.Location = new Point(0, 599);
+            panelBottom.Location = new Point(0, 593);
             panelBottom.Name = "panelBottom";
             panelBottom.Padding = new Padding(8);
-            panelBottom.Size = new Size(994, 48);
+            panelBottom.Size = new Size(994, 54);
             panelBottom.TabIndex = 3;
             // 
             // flowBottom
@@ -497,7 +497,7 @@
             flowBottom.FlowDirection = FlowDirection.RightToLeft;
             flowBottom.Location = new Point(666, 8);
             flowBottom.Name = "flowBottom";
-            flowBottom.Size = new Size(320, 32);
+            flowBottom.Size = new Size(320, 38);
             flowBottom.TabIndex = 0;
             flowBottom.WrapContents = false;
             // 

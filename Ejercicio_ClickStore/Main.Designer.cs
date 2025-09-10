@@ -9,7 +9,6 @@
         private System.Windows.Forms.ToolStripMenuItem catalogoDeProductosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem detalleDeProductoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem carritoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem checkoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vendedorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verificacionDeStockToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logisticaToolStripMenuItem;
@@ -55,7 +54,6 @@
             catalogoDeProductosToolStripMenuItem = new ToolStripMenuItem();
             detalleDeProductoToolStripMenuItem = new ToolStripMenuItem();
             carritoToolStripMenuItem = new ToolStripMenuItem();
-            checkoutToolStripMenuItem = new ToolStripMenuItem();
             vendedorToolStripMenuItem = new ToolStripMenuItem();
             verificacionDeStockToolStripMenuItem = new ToolStripMenuItem();
             logisticaToolStripMenuItem = new ToolStripMenuItem();
@@ -120,7 +118,7 @@
             // 
             clientesToolStripMenuItem.AccessibleDescription = "Funciones para clientes: catálogo, carrito y compras";
             clientesToolStripMenuItem.AccessibleName = "Menú Clientes";
-            clientesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { catalogoDeProductosToolStripMenuItem, detalleDeProductoToolStripMenuItem, carritoToolStripMenuItem, checkoutToolStripMenuItem });
+            clientesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { catalogoDeProductosToolStripMenuItem, detalleDeProductoToolStripMenuItem, carritoToolStripMenuItem });
             clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             clientesToolStripMenuItem.Size = new Size(75, 24);
             clientesToolStripMenuItem.Text = "&Clientes";
@@ -152,18 +150,8 @@
             carritoToolStripMenuItem.Name = "carritoToolStripMenuItem";
             carritoToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.R;
             carritoToolStripMenuItem.Size = new Size(295, 26);
-            carritoToolStripMenuItem.Text = "Ca&rrito";
-            carritoToolStripMenuItem.ToolTipText = "Ver carrito de compras (Ctrl+R)";
-            // 
-            // checkoutToolStripMenuItem
-            // 
-            checkoutToolStripMenuItem.AccessibleDescription = "Finalizar compra y procesar pago";
-            checkoutToolStripMenuItem.AccessibleName = "Finalizar compra";
-            checkoutToolStripMenuItem.Name = "checkoutToolStripMenuItem";
-            checkoutToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.F;
-            checkoutToolStripMenuItem.Size = new Size(295, 26);
-            checkoutToolStripMenuItem.Text = "&Finalizar Compra";
-            checkoutToolStripMenuItem.ToolTipText = "Procesar pago y finalizar (Ctrl+F)";
+            carritoToolStripMenuItem.Text = "Ca&rrito y Checkout";
+            carritoToolStripMenuItem.ToolTipText = "Ver carrito de compras y finalizar (Ctrl+R)";
             // 
             // vendedorToolStripMenuItem
             // 
@@ -350,11 +338,10 @@
             panelBienvenida.BackColor = SystemColors.AppWorkspace;
             panelBienvenida.Controls.Add(lblInstrucciones);
             panelBienvenida.Controls.Add(lblBienvenida);
-            panelBienvenida.Dock = DockStyle.Fill;
-            panelBienvenida.Location = new Point(0, 28);
+            panelBienvenida.Location = new Point(0, 30);
             panelBienvenida.Name = "panelBienvenida";
             panelBienvenida.Padding = new Padding(50);
-            panelBienvenida.Size = new Size(1350, 640);
+            panelBienvenida.Size = new Size(1350, 638);
             panelBienvenida.TabIndex = 2;
             // 
             // lblInstrucciones
@@ -364,7 +351,7 @@
             lblInstrucciones.Anchor = AnchorStyles.None;
             lblInstrucciones.AutoSize = true;
             lblInstrucciones.Font = new Font("Segoe UI", 14F);
-            lblInstrucciones.Location = new Point(450, 304);
+            lblInstrucciones.Location = new Point(350, 300);
             lblInstrucciones.Name = "lblInstrucciones";
             lblInstrucciones.Size = new Size(567, 32);
             lblInstrucciones.TabIndex = 1;
@@ -378,7 +365,7 @@
             lblBienvenida.Anchor = AnchorStyles.None;
             lblBienvenida.AutoSize = true;
             lblBienvenida.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
-            lblBienvenida.Location = new Point(450, 201);
+            lblBienvenida.Location = new Point(450, 200);
             lblBienvenida.Name = "lblBienvenida";
             lblBienvenida.Size = new Size(531, 54);
             lblBienvenida.TabIndex = 0;
@@ -392,8 +379,8 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1350, 694);
-            Controls.Add(panelBienvenida);
             Controls.Add(statusStrip1);
+            Controls.Add(panelBienvenida);
             Controls.Add(menuStrip1);
             Font = new Font("Segoe UI", 9F);
             IsMdiContainer = true;

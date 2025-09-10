@@ -49,544 +49,490 @@
 
         private void InitializeComponent()
         {
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.tsbGuardar = new System.Windows.Forms.ToolStripButton();
-            this.tsbImprimir = new System.Windows.Forms.ToolStripButton();
-            this.tsbAyuda = new System.Windows.Forms.ToolStripButton();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.grpFiltros = new System.Windows.Forms.GroupBox();
-            this.tlpFiltros = new System.Windows.Forms.TableLayoutPanel();
-            this.lblDesde = new System.Windows.Forms.Label();
-            this.dtpDesde = new System.Windows.Forms.DateTimePicker();
-            this.lblHasta = new System.Windows.Forms.Label();
-            this.dtpHasta = new System.Windows.Forms.DateTimePicker();
-            this.lblCliente = new System.Windows.Forms.Label();
-            this.txtCliente = new System.Windows.Forms.TextBox();
-            this.lblEstado = new System.Windows.Forms.Label();
-            this.cboEstado = new System.Windows.Forms.ComboBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.panelRight = new System.Windows.Forms.Panel();
-            this.grpDetalle = new System.Windows.Forms.GroupBox();
-            this.rtbDetalle = new System.Windows.Forms.RichTextBox();
-            this.dgvPedidos = new System.Windows.Forms.DataGridView();
-            this.colNumero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colMedioPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panelBottom = new System.Windows.Forms.Panel();
-            this.flowBottom = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnExportarExcel = new System.Windows.Forms.Button();
-            this.btnMarcarRecibido = new System.Windows.Forms.Button();
-
-            this.toolStrip1.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            this.grpFiltros.SuspendLayout();
-            this.tlpFiltros.SuspendLayout();
-            this.panelRight.SuspendLayout();
-            this.grpDetalle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).BeginInit();
-            this.panelBottom.SuspendLayout();
-            this.flowBottom.SuspendLayout();
-            this.SuspendLayout();
-
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            toolStrip1 = new ToolStrip();
+            tsbGuardar = new ToolStripButton();
+            tsbImprimir = new ToolStripButton();
+            tsbAyuda = new ToolStripButton();
+            statusStrip1 = new StatusStrip();
+            toolStripStatusLabel1 = new ToolStripStatusLabel();
+            splitContainer1 = new SplitContainer();
+            grpFiltros = new GroupBox();
+            tlpFiltros = new TableLayoutPanel();
+            lblDesde = new Label();
+            dtpDesde = new DateTimePicker();
+            lblHasta = new Label();
+            dtpHasta = new DateTimePicker();
+            lblCliente = new Label();
+            txtCliente = new TextBox();
+            lblEstado = new Label();
+            cboEstado = new ComboBox();
+            btnBuscar = new Button();
+            panelRight = new Panel();
+            grpDetalle = new GroupBox();
+            rtbDetalle = new RichTextBox();
+            dgvPedidos = new DataGridView();
+            colNumero = new DataGridViewTextBoxColumn();
+            colCliente = new DataGridViewTextBoxColumn();
+            colFecha = new DataGridViewTextBoxColumn();
+            colTotal = new DataGridViewTextBoxColumn();
+            colMedioPago = new DataGridViewTextBoxColumn();
+            colEstado = new DataGridViewTextBoxColumn();
+            panelBottom = new Panel();
+            flowBottom = new FlowLayoutPanel();
+            btnExportarExcel = new Button();
+            btnMarcarRecibido = new Button();
+            toolStrip1.SuspendLayout();
+            statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
+            splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
+            splitContainer1.SuspendLayout();
+            grpFiltros.SuspendLayout();
+            tlpFiltros.SuspendLayout();
+            panelRight.SuspendLayout();
+            grpDetalle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvPedidos).BeginInit();
+            panelBottom.SuspendLayout();
+            flowBottom.SuspendLayout();
+            SuspendLayout();
             // 
             // toolStrip1
             // 
-            this.toolStrip1.AccessibleDescription = "Barra de herramientas principal";
-            this.toolStrip1.AccessibleName = "Barra de herramientas";
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-                this.tsbGuardar,
-                this.tsbImprimir,
-                this.tsbAyuda
-            });
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1350, 27);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "Barra de herramientas";
-
+            toolStrip1.AccessibleDescription = "Barra de herramientas principal";
+            toolStrip1.AccessibleName = "Barra de herramientas";
+            toolStrip1.ImageScalingSize = new Size(20, 20);
+            toolStrip1.Items.AddRange(new ToolStripItem[] { tsbGuardar, tsbImprimir, tsbAyuda });
+            toolStrip1.Location = new Point(0, 0);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(1350, 27);
+            toolStrip1.TabIndex = 0;
+            toolStrip1.Text = "Barra de herramientas";
             // 
             // tsbGuardar
             // 
-            this.tsbGuardar.AccessibleDescription = "Guardar configuración de filtros";
-            this.tsbGuardar.AccessibleName = "Guardar";
-            this.tsbGuardar.Name = "tsbGuardar";
-            this.tsbGuardar.Size = new System.Drawing.Size(66, 24);
-            this.tsbGuardar.Text = "&Guardar";
-            this.tsbGuardar.ToolTipText = "Guardar configuración (Ctrl+G)";
-
+            tsbGuardar.AccessibleDescription = "Guardar configuración de filtros";
+            tsbGuardar.AccessibleName = "Guardar";
+            tsbGuardar.Name = "tsbGuardar";
+            tsbGuardar.Size = new Size(66, 24);
+            tsbGuardar.Text = "&Guardar";
+            tsbGuardar.ToolTipText = "Guardar configuración (Ctrl+G)";
             // 
             // tsbImprimir
             // 
-            this.tsbImprimir.AccessibleDescription = "Imprimir reporte de pagos";
-            this.tsbImprimir.AccessibleName = "Imprimir";
-            this.tsbImprimir.Name = "tsbImprimir";
-            this.tsbImprimir.Size = new System.Drawing.Size(70, 24);
-            this.tsbImprimir.Text = "&Imprimir";
-            this.tsbImprimir.ToolTipText = "Imprimir reporte (Ctrl+P)";
-
+            tsbImprimir.AccessibleDescription = "Imprimir reporte de pagos";
+            tsbImprimir.AccessibleName = "Imprimir";
+            tsbImprimir.Name = "tsbImprimir";
+            tsbImprimir.Size = new Size(70, 24);
+            tsbImprimir.Text = "&Imprimir";
+            tsbImprimir.ToolTipText = "Imprimir reporte (Ctrl+P)";
             // 
             // tsbAyuda
             // 
-            this.tsbAyuda.AccessibleDescription = "Mostrar ayuda sobre gestión de pagos";
-            this.tsbAyuda.AccessibleName = "Ayuda";
-            this.tsbAyuda.Name = "tsbAyuda";
-            this.tsbAyuda.Size = new System.Drawing.Size(55, 24);
-            this.tsbAyuda.Text = "A&yuda";
-            this.tsbAyuda.ToolTipText = "Mostrar ayuda (F1)";
-
+            tsbAyuda.AccessibleDescription = "Mostrar ayuda sobre gestión de pagos";
+            tsbAyuda.AccessibleName = "Ayuda";
+            tsbAyuda.Name = "tsbAyuda";
+            tsbAyuda.Size = new Size(55, 24);
+            tsbAyuda.Text = "A&yuda";
+            tsbAyuda.ToolTipText = "Mostrar ayuda (F1)";
             // 
             // statusStrip1
             // 
-            this.statusStrip1.AccessibleDescription = "Barra de estado del sistema";
-            this.statusStrip1.AccessibleName = "Barra de estado";
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-                this.toolStripStatusLabel1
-            });
-            this.statusStrip1.Location = new System.Drawing.Point(0, 678);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1350, 22);
-            this.statusStrip1.TabIndex = 2;
-            this.statusStrip1.Text = "Barra de estado";
-
+            statusStrip1.AccessibleDescription = "Barra de estado del sistema";
+            statusStrip1.AccessibleName = "Barra de estado";
+            statusStrip1.ImageScalingSize = new Size(20, 20);
+            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
+            statusStrip1.Location = new Point(0, 674);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Size = new Size(1350, 26);
+            statusStrip1.TabIndex = 2;
+            statusStrip1.Text = "Barra de estado";
             // 
             // toolStripStatusLabel1
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(42, 17);
-            this.toolStripStatusLabel1.Text = "Listo";
-
+            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            toolStripStatusLabel1.Size = new Size(40, 20);
+            toolStripStatusLabel1.Text = "Listo";
             // 
             // splitContainer1
             // 
-            this.splitContainer1.AccessibleDescription = "Panel dividido: filtros a la izquierda, resultados a la derecha";
-            this.splitContainer1.AccessibleName = "Panel principal";
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 27);
-            this.splitContainer1.Name = "splitContainer1";
-            this.splitContainer1.Panel1MinSize = 350;
-            this.splitContainer1.Panel2MinSize = 500;
-
+            splitContainer1.AccessibleDescription = "Panel dividido: filtros a la izquierda, resultados a la derecha";
+            splitContainer1.AccessibleName = "Panel principal";
+            splitContainer1.Dock = DockStyle.Fill;
+            splitContainer1.FixedPanel = FixedPanel.Panel1;
+            splitContainer1.Location = new Point(0, 27);
+            splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.AccessibleDescription = "Área de filtros y búsqueda";
-            this.splitContainer1.Panel1.AccessibleName = "Filtros";
-            this.splitContainer1.Panel1.Controls.Add(this.grpFiltros);
-
+            splitContainer1.Panel1.AccessibleDescription = "Área de filtros y búsqueda";
+            splitContainer1.Panel1.AccessibleName = "Filtros";
+            splitContainer1.Panel1.Controls.Add(grpFiltros);
+            splitContainer1.Panel1MinSize = 350;
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.AccessibleDescription = "Área de resultados y detalles";
-            this.splitContainer1.Panel2.AccessibleName = "Resultados";
-            this.splitContainer1.Panel2.Controls.Add(this.panelRight);
-            this.splitContainer1.Size = new System.Drawing.Size(1350, 651);
-            this.splitContainer1.SplitterDistance = 400;
-            this.splitContainer1.SplitterWidth = 6;
-            this.splitContainer1.TabIndex = 1;
-
+            splitContainer1.Panel2.AccessibleDescription = "Área de resultados y detalles";
+            splitContainer1.Panel2.AccessibleName = "Resultados";
+            splitContainer1.Panel2.Controls.Add(panelRight);
+            splitContainer1.Panel2MinSize = 500;
+            splitContainer1.Size = new Size(1350, 647);
+            splitContainer1.SplitterDistance = 400;
+            splitContainer1.SplitterWidth = 6;
+            splitContainer1.TabIndex = 1;
             // 
             // grpFiltros
             // 
-            this.grpFiltros.AccessibleDescription = "Controles para filtrar pedidos por fecha, cliente y estado";
-            this.grpFiltros.AccessibleName = "Filtros de búsqueda";
-            this.grpFiltros.Controls.Add(this.tlpFiltros);
-            this.grpFiltros.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grpFiltros.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.grpFiltros.Location = new System.Drawing.Point(0, 0);
-            this.grpFiltros.Name = "grpFiltros";
-            this.grpFiltros.Padding = new System.Windows.Forms.Padding(8);
-            this.grpFiltros.Size = new System.Drawing.Size(400, 651);
-            this.grpFiltros.TabIndex = 0;
-            this.grpFiltros.TabStop = false;
-            this.grpFiltros.Text = "Filtros de Búsqueda";
-
+            grpFiltros.AccessibleDescription = "Controles para filtrar pedidos por fecha, cliente y estado";
+            grpFiltros.AccessibleName = "Filtros de búsqueda";
+            grpFiltros.Controls.Add(tlpFiltros);
+            grpFiltros.Dock = DockStyle.Fill;
+            grpFiltros.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            grpFiltros.Location = new Point(0, 0);
+            grpFiltros.Name = "grpFiltros";
+            grpFiltros.Padding = new Padding(8);
+            grpFiltros.Size = new Size(400, 647);
+            grpFiltros.TabIndex = 0;
+            grpFiltros.TabStop = false;
+            grpFiltros.Text = "Filtros de Búsqueda";
             // 
             // tlpFiltros
             // 
-            this.tlpFiltros.AccessibleDescription = "Tabla de controles de filtrado";
-            this.tlpFiltros.AccessibleName = "Controles de filtros";
-            this.tlpFiltros.ColumnCount = 2;
-            this.tlpFiltros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tlpFiltros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpFiltros.Controls.Add(this.lblDesde, 0, 0);
-            this.tlpFiltros.Controls.Add(this.dtpDesde, 1, 0);
-            this.tlpFiltros.Controls.Add(this.lblHasta, 0, 1);
-            this.tlpFiltros.Controls.Add(this.dtpHasta, 1, 1);
-            this.tlpFiltros.Controls.Add(this.lblCliente, 0, 2);
-            this.tlpFiltros.Controls.Add(this.txtCliente, 1, 2);
-            this.tlpFiltros.Controls.Add(this.lblEstado, 0, 3);
-            this.tlpFiltros.Controls.Add(this.cboEstado, 1, 3);
-            this.tlpFiltros.Controls.Add(this.btnBuscar, 1, 4);
-            this.tlpFiltros.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tlpFiltros.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tlpFiltros.Location = new System.Drawing.Point(8, 28);
-            this.tlpFiltros.Name = "tlpFiltros";
-            this.tlpFiltros.RowCount = 5;
-            this.tlpFiltros.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tlpFiltros.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tlpFiltros.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tlpFiltros.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tlpFiltros.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tlpFiltros.Size = new System.Drawing.Size(384, 180);
-            this.tlpFiltros.TabIndex = 0;
-
+            tlpFiltros.AccessibleDescription = "Tabla de controles de filtrado";
+            tlpFiltros.AccessibleName = "Controles de filtros";
+            tlpFiltros.ColumnCount = 2;
+            tlpFiltros.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 100F));
+            tlpFiltros.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tlpFiltros.Controls.Add(lblDesde, 0, 0);
+            tlpFiltros.Controls.Add(dtpDesde, 1, 0);
+            tlpFiltros.Controls.Add(lblHasta, 0, 1);
+            tlpFiltros.Controls.Add(dtpHasta, 1, 1);
+            tlpFiltros.Controls.Add(lblCliente, 0, 2);
+            tlpFiltros.Controls.Add(txtCliente, 1, 2);
+            tlpFiltros.Controls.Add(lblEstado, 0, 3);
+            tlpFiltros.Controls.Add(cboEstado, 1, 3);
+            tlpFiltros.Controls.Add(btnBuscar, 1, 4);
+            tlpFiltros.Dock = DockStyle.Top;
+            tlpFiltros.Font = new Font("Segoe UI", 9F);
+            tlpFiltros.Location = new Point(8, 28);
+            tlpFiltros.Name = "tlpFiltros";
+            tlpFiltros.RowCount = 5;
+            tlpFiltros.RowStyles.Add(new RowStyle(SizeType.Absolute, 35F));
+            tlpFiltros.RowStyles.Add(new RowStyle(SizeType.Absolute, 35F));
+            tlpFiltros.RowStyles.Add(new RowStyle(SizeType.Absolute, 35F));
+            tlpFiltros.RowStyles.Add(new RowStyle(SizeType.Absolute, 35F));
+            tlpFiltros.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
+            tlpFiltros.Size = new Size(384, 180);
+            tlpFiltros.TabIndex = 0;
             // 
             // lblDesde
             // 
-            this.lblDesde.AccessibleDescription = "Etiqueta para fecha inicial";
-            this.lblDesde.AccessibleName = "Desde";
-            this.lblDesde.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblDesde.AutoSize = true;
-            this.lblDesde.Location = new System.Drawing.Point(3, 8);
-            this.lblDesde.Name = "lblDesde";
-            this.lblDesde.Size = new System.Drawing.Size(51, 20);
-            this.lblDesde.TabIndex = 0;
-            this.lblDesde.Text = "&Desde:";
-            this.lblDesde.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-
+            lblDesde.AccessibleDescription = "Etiqueta para fecha inicial";
+            lblDesde.AccessibleName = "Desde";
+            lblDesde.Anchor = AnchorStyles.Left;
+            lblDesde.AutoSize = true;
+            lblDesde.Location = new Point(3, 7);
+            lblDesde.Name = "lblDesde";
+            lblDesde.Size = new Size(54, 20);
+            lblDesde.TabIndex = 0;
+            lblDesde.Text = "&Desde:";
+            lblDesde.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // dtpDesde
             // 
-            this.dtpDesde.AccessibleDescription = "Seleccionar fecha inicial para el filtro";
-            this.dtpDesde.AccessibleName = "Fecha desde";
-            this.dtpDesde.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpDesde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDesde.Location = new System.Drawing.Point(103, 5);
-            this.dtpDesde.Name = "dtpDesde";
-            this.dtpDesde.Size = new System.Drawing.Size(278, 27);
-            this.dtpDesde.TabIndex = 1;
-
+            dtpDesde.AccessibleDescription = "Seleccionar fecha inicial para el filtro";
+            dtpDesde.AccessibleName = "Fecha desde";
+            dtpDesde.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            dtpDesde.Format = DateTimePickerFormat.Short;
+            dtpDesde.Location = new Point(103, 4);
+            dtpDesde.Name = "dtpDesde";
+            dtpDesde.Size = new Size(278, 27);
+            dtpDesde.TabIndex = 1;
             // 
             // lblHasta
             // 
-            this.lblHasta.AccessibleDescription = "Etiqueta para fecha final";
-            this.lblHasta.AccessibleName = "Hasta";
-            this.lblHasta.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblHasta.AutoSize = true;
-            this.lblHasta.Location = new System.Drawing.Point(3, 43);
-            this.lblHasta.Name = "lblHasta";
-            this.lblHasta.Size = new System.Drawing.Size(49, 20);
-            this.lblHasta.TabIndex = 2;
-            this.lblHasta.Text = "&Hasta:";
-            this.lblHasta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-
+            lblHasta.AccessibleDescription = "Etiqueta para fecha final";
+            lblHasta.AccessibleName = "Hasta";
+            lblHasta.Anchor = AnchorStyles.Left;
+            lblHasta.AutoSize = true;
+            lblHasta.Location = new Point(3, 42);
+            lblHasta.Name = "lblHasta";
+            lblHasta.Size = new Size(50, 20);
+            lblHasta.TabIndex = 2;
+            lblHasta.Text = "&Hasta:";
+            lblHasta.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // dtpHasta
             // 
-            this.dtpHasta.AccessibleDescription = "Seleccionar fecha final para el filtro";
-            this.dtpHasta.AccessibleName = "Fecha hasta";
-            this.dtpHasta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpHasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpHasta.Location = new System.Drawing.Point(103, 40);
-            this.dtpHasta.Name = "dtpHasta";
-            this.dtpHasta.Size = new System.Drawing.Size(278, 27);
-            this.dtpHasta.TabIndex = 3;
-
+            dtpHasta.AccessibleDescription = "Seleccionar fecha final para el filtro";
+            dtpHasta.AccessibleName = "Fecha hasta";
+            dtpHasta.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            dtpHasta.Format = DateTimePickerFormat.Short;
+            dtpHasta.Location = new Point(103, 39);
+            dtpHasta.Name = "dtpHasta";
+            dtpHasta.Size = new Size(278, 27);
+            dtpHasta.TabIndex = 3;
             // 
             // lblCliente
             // 
-            this.lblCliente.AccessibleDescription = "Etiqueta para filtro de cliente";
-            this.lblCliente.AccessibleName = "Cliente";
-            this.lblCliente.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblCliente.AutoSize = true;
-            this.lblCliente.Location = new System.Drawing.Point(3, 78);
-            this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(58, 20);
-            this.lblCliente.TabIndex = 4;
-            this.lblCliente.Text = "&Cliente:";
-            this.lblCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-
+            lblCliente.AccessibleDescription = "Etiqueta para filtro de cliente";
+            lblCliente.AccessibleName = "Cliente";
+            lblCliente.Anchor = AnchorStyles.Left;
+            lblCliente.AutoSize = true;
+            lblCliente.Location = new Point(3, 77);
+            lblCliente.Name = "lblCliente";
+            lblCliente.Size = new Size(58, 20);
+            lblCliente.TabIndex = 4;
+            lblCliente.Text = "&Cliente:";
+            lblCliente.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // txtCliente
             // 
-            this.txtCliente.AccessibleDescription = "Escribir nombre del cliente para filtrar";
-            this.txtCliente.AccessibleName = "Nombre del cliente";
-            this.txtCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCliente.Location = new System.Drawing.Point(103, 75);
-            this.txtCliente.Name = "txtCliente";
-            this.txtCliente.PlaceholderText = "Nombre del cliente";
-            this.txtCliente.Size = new System.Drawing.Size(278, 27);
-            this.txtCliente.TabIndex = 5;
-
+            txtCliente.AccessibleDescription = "Escribir nombre del cliente para filtrar";
+            txtCliente.AccessibleName = "Nombre del cliente";
+            txtCliente.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            txtCliente.Location = new Point(103, 74);
+            txtCliente.Name = "txtCliente";
+            txtCliente.PlaceholderText = "Nombre del cliente";
+            txtCliente.Size = new Size(278, 27);
+            txtCliente.TabIndex = 5;
             // 
             // lblEstado
             // 
-            this.lblEstado.AccessibleDescription = "Etiqueta para filtro de estado";
-            this.lblEstado.AccessibleName = "Estado";
-            this.lblEstado.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(3, 113);
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(57, 20);
-            this.lblEstado.TabIndex = 6;
-            this.lblEstado.Text = "&Estado:";
-            this.lblEstado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-
+            lblEstado.AccessibleDescription = "Etiqueta para filtro de estado";
+            lblEstado.AccessibleName = "Estado";
+            lblEstado.Anchor = AnchorStyles.Left;
+            lblEstado.AutoSize = true;
+            lblEstado.Location = new Point(3, 112);
+            lblEstado.Name = "lblEstado";
+            lblEstado.Size = new Size(57, 20);
+            lblEstado.TabIndex = 6;
+            lblEstado.Text = "&Estado:";
+            lblEstado.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // cboEstado
             // 
-            this.cboEstado.AccessibleDescription = "Seleccionar estado del pedido para filtrar";
-            this.cboEstado.AccessibleName = "Estado del pedido";
-            this.cboEstado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cboEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboEstado.Items.AddRange(new object[] {
-                "Todos",
-                "Pendiente",
-                "Pagado",
-                "Entregado",
-                "Cancelado"
-            });
-            this.cboEstado.Location = new System.Drawing.Point(103, 109);
-            this.cboEstado.Name = "cboEstado";
-            this.cboEstado.Size = new System.Drawing.Size(278, 28);
-            this.cboEstado.TabIndex = 7;
-
+            cboEstado.AccessibleDescription = "Seleccionar estado del pedido para filtrar";
+            cboEstado.AccessibleName = "Estado del pedido";
+            cboEstado.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            cboEstado.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboEstado.Items.AddRange(new object[] { "Todos", "Pendiente", "Pagado", "Entregado", "Cancelado" });
+            cboEstado.Location = new Point(103, 108);
+            cboEstado.Name = "cboEstado";
+            cboEstado.Size = new Size(278, 28);
+            cboEstado.TabIndex = 7;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.AccessibleDescription = "Aplicar filtros y buscar pedidos";
-            this.btnBuscar.AccessibleName = "Buscar pedidos";
-            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnBuscar.Location = new System.Drawing.Point(103, 148);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(100, 30);
-            this.btnBuscar.TabIndex = 8;
-            this.btnBuscar.Text = "&Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-
+            btnBuscar.AccessibleDescription = "Aplicar filtros y buscar pedidos";
+            btnBuscar.AccessibleName = "Buscar pedidos";
+            btnBuscar.Anchor = AnchorStyles.Left;
+            btnBuscar.Location = new Point(103, 145);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(100, 30);
+            btnBuscar.TabIndex = 8;
+            btnBuscar.Text = "&Buscar";
+            btnBuscar.UseVisualStyleBackColor = true;
             // 
             // panelRight
             // 
-            this.panelRight.Controls.Add(this.grpDetalle);
-            this.panelRight.Controls.Add(this.dgvPedidos);
-            this.panelRight.Controls.Add(this.panelBottom);
-            this.panelRight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelRight.Location = new System.Drawing.Point(0, 0);
-            this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(944, 651);
-            this.panelRight.TabIndex = 0;
-
+            panelRight.Controls.Add(grpDetalle);
+            panelRight.Controls.Add(dgvPedidos);
+            panelRight.Controls.Add(panelBottom);
+            panelRight.Dock = DockStyle.Fill;
+            panelRight.Location = new Point(0, 0);
+            panelRight.Name = "panelRight";
+            panelRight.Size = new Size(944, 647);
+            panelRight.TabIndex = 0;
             // 
             // grpDetalle
             // 
-            this.grpDetalle.AccessibleDescription = "Detalles del pedido seleccionado";
-            this.grpDetalle.AccessibleName = "Detalle del pedido";
-            this.grpDetalle.Controls.Add(this.rtbDetalle);
-            this.grpDetalle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grpDetalle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.grpDetalle.Location = new System.Drawing.Point(0, 350);
-            this.grpDetalle.Name = "grpDetalle";
-            this.grpDetalle.Padding = new System.Windows.Forms.Padding(5);
-            this.grpDetalle.Size = new System.Drawing.Size(944, 253);
-            this.grpDetalle.TabIndex = 1;
-            this.grpDetalle.TabStop = false;
-            this.grpDetalle.Text = "Detalle del Pedido / Comprobante";
-
+            grpDetalle.AccessibleDescription = "Detalles del pedido seleccionado";
+            grpDetalle.AccessibleName = "Detalle del pedido";
+            grpDetalle.Controls.Add(rtbDetalle);
+            grpDetalle.Dock = DockStyle.Fill;
+            grpDetalle.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            grpDetalle.Location = new Point(0, 350);
+            grpDetalle.Name = "grpDetalle";
+            grpDetalle.Padding = new Padding(5);
+            grpDetalle.Size = new Size(944, 244);
+            grpDetalle.TabIndex = 1;
+            grpDetalle.TabStop = false;
+            grpDetalle.Text = "Detalle del Pedido / Comprobante";
             // 
             // rtbDetalle
             // 
-            this.rtbDetalle.AccessibleDescription = "Información detallada del pedido y comprobante de pago";
-            this.rtbDetalle.AccessibleName = "Detalle del pedido";
-            this.rtbDetalle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbDetalle.Font = new System.Drawing.Font("Consolas", 9F);
-            this.rtbDetalle.Location = new System.Drawing.Point(5, 25);
-            this.rtbDetalle.Name = "rtbDetalle";
-            this.rtbDetalle.ReadOnly = true;
-            this.rtbDetalle.Size = new System.Drawing.Size(934, 223);
-            this.rtbDetalle.TabIndex = 0;
-            this.rtbDetalle.Text = "Seleccione un pedido para ver sus detalles y comprobante de pago.";
-
+            rtbDetalle.AccessibleDescription = "Información detallada del pedido y comprobante de pago";
+            rtbDetalle.AccessibleName = "Detalle del pedido";
+            rtbDetalle.Dock = DockStyle.Fill;
+            rtbDetalle.Font = new Font("Consolas", 9F);
+            rtbDetalle.Location = new Point(5, 25);
+            rtbDetalle.Name = "rtbDetalle";
+            rtbDetalle.ReadOnly = true;
+            rtbDetalle.Size = new Size(934, 214);
+            rtbDetalle.TabIndex = 0;
+            rtbDetalle.Text = "Seleccione un pedido para ver sus detalles y comprobante de pago.";
             // 
             // dgvPedidos
             // 
-            this.dgvPedidos.AccessibleDescription = "Lista de pedidos entregados y sus pagos";
-            this.dgvPedidos.AccessibleName = "Lista de pedidos";
-            this.dgvPedidos.AllowUserToAddRows = false;
-            this.dgvPedidos.AllowUserToDeleteRows = false;
-            this.dgvPedidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvPedidos.ColumnHeadersHeight = 29;
-            this.dgvPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvPedidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-                this.colNumero,
-                this.colCliente,
-                this.colFecha,
-                this.colTotal,
-                this.colMedioPago,
-                this.colEstado
-            });
-            this.dgvPedidos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dgvPedidos.Location = new System.Drawing.Point(0, 0);
-            this.dgvPedidos.MultiSelect = false;
-            this.dgvPedidos.Name = "dgvPedidos";
-            this.dgvPedidos.ReadOnly = true;
-            this.dgvPedidos.RowHeadersVisible = false;
-            this.dgvPedidos.RowHeadersWidth = 51;
-            this.dgvPedidos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPedidos.Size = new System.Drawing.Size(944, 350);
-            this.dgvPedidos.TabIndex = 0;
-
+            dgvPedidos.AccessibleDescription = "Lista de pedidos entregados y sus pagos";
+            dgvPedidos.AccessibleName = "Lista de pedidos";
+            dgvPedidos.AllowUserToAddRows = false;
+            dgvPedidos.AllowUserToDeleteRows = false;
+            dgvPedidos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvPedidos.ColumnHeadersHeight = 29;
+            dgvPedidos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dgvPedidos.Columns.AddRange(new DataGridViewColumn[] { colNumero, colCliente, colFecha, colTotal, colMedioPago, colEstado });
+            dgvPedidos.Dock = DockStyle.Top;
+            dgvPedidos.Location = new Point(0, 0);
+            dgvPedidos.MultiSelect = false;
+            dgvPedidos.Name = "dgvPedidos";
+            dgvPedidos.ReadOnly = true;
+            dgvPedidos.RowHeadersVisible = false;
+            dgvPedidos.RowHeadersWidth = 51;
+            dgvPedidos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvPedidos.Size = new Size(944, 350);
+            dgvPedidos.TabIndex = 0;
             // 
             // colNumero
             // 
-            this.colNumero.DataPropertyName = "Numero";
-            this.colNumero.FillWeight = 15F;
-            this.colNumero.HeaderText = "Nº Pedido";
-            this.colNumero.MinimumWidth = 80;
-            this.colNumero.Name = "colNumero";
-            this.colNumero.ReadOnly = true;
-
+            colNumero.DataPropertyName = "Numero";
+            colNumero.FillWeight = 15F;
+            colNumero.HeaderText = "Nº Pedido";
+            colNumero.MinimumWidth = 80;
+            colNumero.Name = "colNumero";
+            colNumero.ReadOnly = true;
             // 
             // colCliente
             // 
-            this.colCliente.DataPropertyName = "Cliente";
-            this.colCliente.FillWeight = 25F;
-            this.colCliente.HeaderText = "Cliente";
-            this.colCliente.MinimumWidth = 120;
-            this.colCliente.Name = "colCliente";
-            this.colCliente.ReadOnly = true;
-
+            colCliente.DataPropertyName = "Cliente";
+            colCliente.FillWeight = 25F;
+            colCliente.HeaderText = "Cliente";
+            colCliente.MinimumWidth = 120;
+            colCliente.Name = "colCliente";
+            colCliente.ReadOnly = true;
             // 
             // colFecha
             // 
-            this.colFecha.DataPropertyName = "Fecha";
-            this.colFecha.FillWeight = 15F;
-            this.colFecha.HeaderText = "Fecha";
-            this.colFecha.MinimumWidth = 90;
-            this.colFecha.Name = "colFecha";
-            this.colFecha.ReadOnly = true;
-
+            colFecha.DataPropertyName = "Fecha";
+            colFecha.FillWeight = 15F;
+            colFecha.HeaderText = "Fecha";
+            colFecha.MinimumWidth = 90;
+            colFecha.Name = "colFecha";
+            colFecha.ReadOnly = true;
             // 
             // colTotal
             // 
-            this.colTotal.DataPropertyName = "Total";
-            this.colTotal.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.colTotal.DefaultCellStyle.Format = "C2";
-            this.colTotal.FillWeight = 15F;
-            this.colTotal.HeaderText = "Total";
-            this.colTotal.MinimumWidth = 80;
-            this.colTotal.Name = "colTotal";
-            this.colTotal.ReadOnly = true;
-
+            colTotal.DataPropertyName = "Total";
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle1.Format = "C2";
+            colTotal.DefaultCellStyle = dataGridViewCellStyle1;
+            colTotal.FillWeight = 15F;
+            colTotal.HeaderText = "Total";
+            colTotal.MinimumWidth = 80;
+            colTotal.Name = "colTotal";
+            colTotal.ReadOnly = true;
             // 
             // colMedioPago
             // 
-            this.colMedioPago.DataPropertyName = "MedioPago";
-            this.colMedioPago.FillWeight = 20F;
-            this.colMedioPago.HeaderText = "Medio de Pago";
-            this.colMedioPago.MinimumWidth = 100;
-            this.colMedioPago.Name = "colMedioPago";
-            this.colMedioPago.ReadOnly = true;
-
+            colMedioPago.DataPropertyName = "MedioPago";
+            colMedioPago.FillWeight = 20F;
+            colMedioPago.HeaderText = "Medio de Pago";
+            colMedioPago.MinimumWidth = 100;
+            colMedioPago.Name = "colMedioPago";
+            colMedioPago.ReadOnly = true;
             // 
             // colEstado
             // 
-            this.colEstado.DataPropertyName = "Estado";
-            this.colEstado.FillWeight = 10F;
-            this.colEstado.HeaderText = "Estado";
-            this.colEstado.MinimumWidth = 80;
-            this.colEstado.Name = "colEstado";
-            this.colEstado.ReadOnly = true;
-
+            colEstado.DataPropertyName = "Estado";
+            colEstado.FillWeight = 10F;
+            colEstado.HeaderText = "Estado";
+            colEstado.MinimumWidth = 80;
+            colEstado.Name = "colEstado";
+            colEstado.ReadOnly = true;
             // 
             // panelBottom
             // 
-            this.panelBottom.Controls.Add(this.flowBottom);
-            this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBottom.Location = new System.Drawing.Point(0, 603);
-            this.panelBottom.Name = "panelBottom";
-            this.panelBottom.Padding = new System.Windows.Forms.Padding(8);
-            this.panelBottom.Size = new System.Drawing.Size(944, 48);
-            this.panelBottom.TabIndex = 2;
-
+            panelBottom.Controls.Add(flowBottom);
+            panelBottom.Dock = DockStyle.Bottom;
+            panelBottom.Location = new Point(0, 594);
+            panelBottom.Name = "panelBottom";
+            panelBottom.Padding = new Padding(8);
+            panelBottom.Size = new Size(944, 53);
+            panelBottom.TabIndex = 2;
             // 
             // flowBottom
             // 
-            this.flowBottom.Controls.Add(this.btnExportarExcel);
-            this.flowBottom.Controls.Add(this.btnMarcarRecibido);
-            this.flowBottom.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowBottom.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowBottom.Location = new System.Drawing.Point(644, 8);
-            this.flowBottom.Name = "flowBottom";
-            this.flowBottom.Size = new System.Drawing.Size(292, 32);
-            this.flowBottom.TabIndex = 0;
-            this.flowBottom.WrapContents = false;
-
+            flowBottom.Controls.Add(btnExportarExcel);
+            flowBottom.Controls.Add(btnMarcarRecibido);
+            flowBottom.Dock = DockStyle.Right;
+            flowBottom.FlowDirection = FlowDirection.RightToLeft;
+            flowBottom.Location = new Point(644, 8);
+            flowBottom.Name = "flowBottom";
+            flowBottom.Size = new Size(292, 37);
+            flowBottom.TabIndex = 0;
+            flowBottom.WrapContents = false;
             // 
             // btnExportarExcel
             // 
-            this.btnExportarExcel.AccessibleDescription = "Exportar lista de pedidos a archivo Excel";
-            this.btnExportarExcel.AccessibleName = "Exportar a Excel";
-            this.btnExportarExcel.AutoSize = true;
-            this.btnExportarExcel.Location = new System.Drawing.Point(179, 3);
-            this.btnExportarExcel.Name = "btnExportarExcel";
-            this.btnExportarExcel.Size = new System.Drawing.Size(110, 30);
-            this.btnExportarExcel.TabIndex = 0;
-            this.btnExportarExcel.Text = "&Exportar Excel";
-            this.btnExportarExcel.UseVisualStyleBackColor = true;
-
+            btnExportarExcel.AccessibleDescription = "Exportar lista de pedidos a archivo Excel";
+            btnExportarExcel.AccessibleName = "Exportar a Excel";
+            btnExportarExcel.AutoSize = true;
+            btnExportarExcel.Location = new Point(176, 3);
+            btnExportarExcel.Name = "btnExportarExcel";
+            btnExportarExcel.Size = new Size(113, 30);
+            btnExportarExcel.TabIndex = 0;
+            btnExportarExcel.Text = "&Exportar Excel";
+            btnExportarExcel.UseVisualStyleBackColor = true;
             // 
             // btnMarcarRecibido
             // 
-            this.btnMarcarRecibido.AccessibleDescription = "Marcar que se ha recibido el pago del pedido seleccionado";
-            this.btnMarcarRecibido.AccessibleName = "Marcar pago recibido";
-            this.btnMarcarRecibido.AutoSize = true;
-            this.btnMarcarRecibido.Location = new System.Drawing.Point(38, 3);
-            this.btnMarcarRecibido.Name = "btnMarcarRecibido";
-            this.btnMarcarRecibido.Size = new System.Drawing.Size(135, 30);
-            this.btnMarcarRecibido.TabIndex = 1;
-            this.btnMarcarRecibido.Text = "&Marcar Pago Recibido";
-            this.btnMarcarRecibido.UseVisualStyleBackColor = true;
-
+            btnMarcarRecibido.AccessibleDescription = "Marcar que se ha recibido el pago del pedido seleccionado";
+            btnMarcarRecibido.AccessibleName = "Marcar pago recibido";
+            btnMarcarRecibido.AutoSize = true;
+            btnMarcarRecibido.Location = new Point(5, 3);
+            btnMarcarRecibido.Name = "btnMarcarRecibido";
+            btnMarcarRecibido.Size = new Size(165, 30);
+            btnMarcarRecibido.TabIndex = 1;
+            btnMarcarRecibido.Text = "&Marcar Pago Recibido";
+            btnMarcarRecibido.UseVisualStyleBackColor = true;
             // 
             // PedidosEntregadosyPagos
             // 
-            this.AcceptButton = this.btnBuscar;
-            this.AccessibleDescription = "Formulario para gestionar pedidos entregados y pagos recibidos";
-            this.AccessibleName = "Gestión de Pedidos y Pagos";
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 700);
-            this.Controls.Add(this.splitContainer1);
-            this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.statusStrip1);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.MinimumSize = new System.Drawing.Size(1000, 600);
-            this.Name = "PedidosEntregadosyPagos";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ClickStore - Gestión de Pedidos y Pagos";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            this.grpFiltros.ResumeLayout(false);
-            this.tlpFiltros.ResumeLayout(false);
-            this.tlpFiltros.PerformLayout();
-            this.panelRight.ResumeLayout(false);
-            this.grpDetalle.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).EndInit();
-            this.panelBottom.ResumeLayout(false);
-            this.flowBottom.ResumeLayout(false);
-            this.flowBottom.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AcceptButton = btnBuscar;
+            AccessibleDescription = "Formulario para gestionar pedidos entregados y pagos recibidos";
+            AccessibleName = "Gestión de Pedidos y Pagos";
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1350, 700);
+            Controls.Add(splitContainer1);
+            Controls.Add(toolStrip1);
+            Controls.Add(statusStrip1);
+            Font = new Font("Segoe UI", 9F);
+            MinimumSize = new Size(1000, 600);
+            Name = "PedidosEntregadosyPagos";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "ClickStore - Gestión de Pedidos y Pagos";
+            WindowState = FormWindowState.Maximized;
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
+            splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
+            splitContainer1.ResumeLayout(false);
+            grpFiltros.ResumeLayout(false);
+            tlpFiltros.ResumeLayout(false);
+            tlpFiltros.PerformLayout();
+            panelRight.ResumeLayout(false);
+            grpDetalle.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvPedidos).EndInit();
+            panelBottom.ResumeLayout(false);
+            flowBottom.ResumeLayout(false);
+            flowBottom.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
     }
 }

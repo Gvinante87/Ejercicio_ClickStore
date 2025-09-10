@@ -148,7 +148,7 @@
             splitContainer1.Panel2.Controls.Add(panelRight);
             splitContainer1.Panel2MinSize = 350;
             splitContainer1.Size = new Size(1350, 647);
-            splitContainer1.SplitterDistance = 948;
+            splitContainer1.SplitterDistance = 946;
             splitContainer1.SplitterWidth = 6;
             splitContainer1.TabIndex = 0;
             // 
@@ -162,7 +162,7 @@
             grpRuta.Location = new Point(0, 0);
             grpRuta.Name = "grpRuta";
             grpRuta.Padding = new Padding(8);
-            grpRuta.Size = new Size(948, 647);
+            grpRuta.Size = new Size(946, 647);
             grpRuta.TabIndex = 0;
             grpRuta.TabStop = false;
             grpRuta.Text = "Ruta de Entregas del Día";
@@ -177,7 +177,7 @@
             lstRuta.Items.AddRange(new object[] { "1. Juan Pérez - Av. Corrientes 1234, CABA - Pedido #001 - Pendiente", "2. María García - San Martín 567, Vicente López - Pedido #002 - Pendiente", "3. Carlos López - Rivadavia 890, San Isidro - Pedido #003 - Pendiente", "4. Ana Rodríguez - Mitre 345, Olivos - Pedido #004 - Pendiente", "5. Luis Fernández - Belgrano 678, Martínez - Pedido #005 - Pendiente" });
             lstRuta.Location = new Point(8, 28);
             lstRuta.Name = "lstRuta";
-            lstRuta.Size = new Size(932, 611);
+            lstRuta.Size = new Size(930, 611);
             lstRuta.TabIndex = 0;
             // 
             // panelRight
@@ -188,7 +188,7 @@
             panelRight.Dock = DockStyle.Fill;
             panelRight.Location = new Point(0, 0);
             panelRight.Name = "panelRight";
-            panelRight.Size = new Size(396, 647);
+            panelRight.Size = new Size(398, 647);
             panelRight.TabIndex = 0;
             // 
             // grpEntregas
@@ -201,7 +201,7 @@
             grpEntregas.Location = new Point(0, 300);
             grpEntregas.Name = "grpEntregas";
             grpEntregas.Padding = new Padding(5);
-            grpEntregas.Size = new Size(396, 299);
+            grpEntregas.Size = new Size(398, 291);
             grpEntregas.TabIndex = 1;
             grpEntregas.TabStop = false;
             grpEntregas.Text = "Detalles de Entregas";
@@ -225,7 +225,7 @@
             dgvEntregas.RowHeadersVisible = false;
             dgvEntregas.RowHeadersWidth = 51;
             dgvEntregas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvEntregas.Size = new Size(386, 269);
+            dgvEntregas.Size = new Size(388, 261);
             dgvEntregas.TabIndex = 0;
             // 
             // colPedido
@@ -274,7 +274,7 @@
             grpMapa.Location = new Point(0, 0);
             grpMapa.Name = "grpMapa";
             grpMapa.Padding = new Padding(5);
-            grpMapa.Size = new Size(396, 300);
+            grpMapa.Size = new Size(398, 300);
             grpMapa.TabIndex = 0;
             grpMapa.TabStop = false;
             grpMapa.Text = "Mapa de Zona";
@@ -289,7 +289,7 @@
             panelMapa.Dock = DockStyle.Fill;
             panelMapa.Location = new Point(5, 25);
             panelMapa.Name = "panelMapa";
-            panelMapa.Size = new Size(386, 270);
+            panelMapa.Size = new Size(388, 270);
             panelMapa.TabIndex = 0;
             // 
             // lblMapa
@@ -298,7 +298,7 @@
             lblMapa.AutoSize = true;
             lblMapa.Font = new Font("Segoe UI", 10F, FontStyle.Italic);
             lblMapa.ForeColor = SystemColors.GrayText;
-            lblMapa.Location = new Point(81, 125);
+            lblMapa.Location = new Point(82, 125);
             lblMapa.Name = "lblMapa";
             lblMapa.Size = new Size(232, 23);
             lblMapa.TabIndex = 0;
@@ -309,10 +309,10 @@
             // 
             panelBottom.Controls.Add(flowBottom);
             panelBottom.Dock = DockStyle.Bottom;
-            panelBottom.Location = new Point(0, 599);
+            panelBottom.Location = new Point(0, 591);
             panelBottom.Name = "panelBottom";
             panelBottom.Padding = new Padding(8);
-            panelBottom.Size = new Size(396, 48);
+            panelBottom.Size = new Size(398, 56);
             panelBottom.TabIndex = 2;
             // 
             // flowBottom
@@ -321,9 +321,9 @@
             flowBottom.Controls.Add(btnReprogramar);
             flowBottom.Dock = DockStyle.Right;
             flowBottom.FlowDirection = FlowDirection.RightToLeft;
-            flowBottom.Location = new Point(152, 8);
+            flowBottom.Location = new Point(116, 8);
             flowBottom.Name = "flowBottom";
-            flowBottom.Size = new Size(274, 32);
+            flowBottom.Size = new Size(274, 40);
             flowBottom.TabIndex = 0;
             flowBottom.WrapContents = false;
             // 
@@ -332,7 +332,7 @@
             btnRegistrar.AccessibleDescription = "Registrar entrega como completada exitosamente";
             btnRegistrar.AccessibleName = "Registrar entrega";
             btnRegistrar.AutoSize = true;
-            btnRegistrar.Location = new Point(100, 3);
+            btnRegistrar.Location = new Point(138, 3);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(133, 30);
             btnRegistrar.TabIndex = 0;
@@ -344,7 +344,7 @@
             btnReprogramar.AccessibleDescription = "Reprogramar entrega para otro momento";
             btnReprogramar.AccessibleName = "Reprogramar entrega";
             btnReprogramar.AutoSize = true;
-            btnReprogramar.Location = new Point(-13, 3);
+            btnReprogramar.Location = new Point(2, 3);
             btnReprogramar.Name = "btnReprogramar";
             btnReprogramar.Size = new Size(130, 30);
             btnReprogramar.TabIndex = 1;

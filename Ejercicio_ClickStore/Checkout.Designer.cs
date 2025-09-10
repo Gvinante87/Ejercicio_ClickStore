@@ -69,635 +69,573 @@
 
         private void InitializeComponent()
         {
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.tsbGuardar = new System.Windows.Forms.ToolStripButton();
-            this.tsbImprimir = new System.Windows.Forms.ToolStripButton();
-            this.tsbAyuda = new System.Windows.Forms.ToolStripButton();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPageCarrito = new System.Windows.Forms.TabPage();
-            this.dgvCarrito = new System.Windows.Forms.DataGridView();
-            this.colProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSubtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPageEnvio = new System.Windows.Forms.TabPage();
-            this.tlpEnvio = new System.Windows.Forms.TableLayoutPanel();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.lblTelefono = new System.Windows.Forms.Label();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.lblDireccion = new System.Windows.Forms.Label();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.lblCiudad = new System.Windows.Forms.Label();
-            this.txtCiudad = new System.Windows.Forms.TextBox();
-            this.lblCP = new System.Windows.Forms.Label();
-            this.txtCP = new System.Windows.Forms.TextBox();
-            this.lblFranja = new System.Windows.Forms.Label();
-            this.cboFranja = new System.Windows.Forms.ComboBox();
-            this.tabPagePago = new System.Windows.Forms.TabPage();
-            this.tlpPago = new System.Windows.Forms.TableLayoutPanel();
-            this.lblMetodo = new System.Windows.Forms.Label();
-            this.cboMetodo = new System.Windows.Forms.ComboBox();
-            this.lblNum = new System.Windows.Forms.Label();
-            this.txtNum = new System.Windows.Forms.TextBox();
-            this.lblCuotas = new System.Windows.Forms.Label();
-            this.cboCuotas = new System.Windows.Forms.ComboBox();
-            this.lblFactura = new System.Windows.Forms.Label();
-            this.cboFactura = new System.Windows.Forms.ComboBox();
-            this.tabPageConfirmacion = new System.Windows.Forms.TabPage();
-            this.rtbConfirmacion = new System.Windows.Forms.RichTextBox();
-            this.panelBottom = new System.Windows.Forms.Panel();
-            this.flowBottom = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnConfirmar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.toolStrip1.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabPageCarrito.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCarrito)).BeginInit();
-            this.tabPageEnvio.SuspendLayout();
-            this.tlpEnvio.SuspendLayout();
-            this.tabPagePago.SuspendLayout();
-            this.tlpPago.SuspendLayout();
-            this.tabPageConfirmacion.SuspendLayout();
-            this.panelBottom.SuspendLayout();
-            this.flowBottom.SuspendLayout();
-            this.SuspendLayout();
-
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            toolStrip1 = new ToolStrip();
+            tsbGuardar = new ToolStripButton();
+            tsbImprimir = new ToolStripButton();
+            tsbAyuda = new ToolStripButton();
+            statusStrip1 = new StatusStrip();
+            toolStripStatusLabel1 = new ToolStripStatusLabel();
+            tabControl1 = new TabControl();
+            tabPageCarrito = new TabPage();
+            dgvCarrito = new DataGridView();
+            colProducto = new DataGridViewTextBoxColumn();
+            colPrecio = new DataGridViewTextBoxColumn();
+            colCantidad = new DataGridViewTextBoxColumn();
+            colSubtotal = new DataGridViewTextBoxColumn();
+            tabPageEnvio = new TabPage();
+            tlpEnvio = new TableLayoutPanel();
+            lblNombre = new Label();
+            txtNombre = new TextBox();
+            lblTelefono = new Label();
+            txtTelefono = new TextBox();
+            lblDireccion = new Label();
+            txtDireccion = new TextBox();
+            lblCiudad = new Label();
+            txtCiudad = new TextBox();
+            lblCP = new Label();
+            txtCP = new TextBox();
+            lblFranja = new Label();
+            cboFranja = new ComboBox();
+            tabPagePago = new TabPage();
+            tlpPago = new TableLayoutPanel();
+            lblMetodo = new Label();
+            cboMetodo = new ComboBox();
+            lblNum = new Label();
+            txtNum = new TextBox();
+            lblCuotas = new Label();
+            cboCuotas = new ComboBox();
+            lblFactura = new Label();
+            cboFactura = new ComboBox();
+            tabPageConfirmacion = new TabPage();
+            rtbConfirmacion = new RichTextBox();
+            panelBottom = new Panel();
+            flowBottom = new FlowLayoutPanel();
+            btnConfirmar = new Button();
+            btnCancelar = new Button();
+            toolStrip1.SuspendLayout();
+            statusStrip1.SuspendLayout();
+            tabControl1.SuspendLayout();
+            tabPageCarrito.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvCarrito).BeginInit();
+            tabPageEnvio.SuspendLayout();
+            tlpEnvio.SuspendLayout();
+            tabPagePago.SuspendLayout();
+            tlpPago.SuspendLayout();
+            tabPageConfirmacion.SuspendLayout();
+            panelBottom.SuspendLayout();
+            flowBottom.SuspendLayout();
+            SuspendLayout();
             // 
             // toolStrip1
             // 
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsbGuardar,
-            this.tsbImprimir,
-            this.tsbAyuda});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1350, 27);
-            this.toolStrip1.TabIndex = 2;
-
+            toolStrip1.ImageScalingSize = new Size(20, 20);
+            toolStrip1.Items.AddRange(new ToolStripItem[] { tsbGuardar, tsbImprimir, tsbAyuda });
+            toolStrip1.Location = new Point(0, 0);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(1350, 27);
+            toolStrip1.TabIndex = 2;
             // 
             // tsbGuardar
             // 
-            this.tsbGuardar.Name = "tsbGuardar";
-            this.tsbGuardar.Size = new System.Drawing.Size(66, 24);
-            this.tsbGuardar.Text = "&Guardar";
-            this.tsbGuardar.ToolTipText = "Guardar pedido";
-
+            tsbGuardar.Name = "tsbGuardar";
+            tsbGuardar.Size = new Size(66, 24);
+            tsbGuardar.Text = "&Guardar";
+            tsbGuardar.ToolTipText = "Guardar pedido";
             // 
             // tsbImprimir
             // 
-            this.tsbImprimir.Name = "tsbImprimir";
-            this.tsbImprimir.Size = new System.Drawing.Size(70, 24);
-            this.tsbImprimir.Text = "&Imprimir";
-            this.tsbImprimir.ToolTipText = "Imprimir resumen";
-
+            tsbImprimir.Name = "tsbImprimir";
+            tsbImprimir.Size = new Size(70, 24);
+            tsbImprimir.Text = "&Imprimir";
+            tsbImprimir.ToolTipText = "Imprimir resumen";
             // 
             // tsbAyuda
             // 
-            this.tsbAyuda.Name = "tsbAyuda";
-            this.tsbAyuda.Size = new System.Drawing.Size(55, 24);
-            this.tsbAyuda.Text = "A&yuda";
-            this.tsbAyuda.ToolTipText = "Mostrar ayuda";
-
+            tsbAyuda.Name = "tsbAyuda";
+            tsbAyuda.Size = new Size(55, 24);
+            tsbAyuda.Text = "A&yuda";
+            tsbAyuda.ToolTipText = "Mostrar ayuda";
             // 
             // statusStrip1
             // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 674);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1350, 26);
-            this.statusStrip1.TabIndex = 3;
-
+            statusStrip1.ImageScalingSize = new Size(20, 20);
+            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
+            statusStrip1.Location = new Point(0, 674);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Size = new Size(1350, 26);
+            statusStrip1.TabIndex = 3;
             // 
             // toolStripStatusLabel1
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(40, 20);
-            this.toolStripStatusLabel1.Text = "Listo";
-
+            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            toolStripStatusLabel1.Size = new Size(40, 20);
+            toolStripStatusLabel1.Text = "Listo";
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPageCarrito);
-            this.tabControl1.Controls.Add(this.tabPageEnvio);
-            this.tabControl1.Controls.Add(this.tabPagePago);
-            this.tabControl1.Controls.Add(this.tabPageConfirmacion);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 27);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1350, 599);
-            this.tabControl1.TabIndex = 0;
-
+            tabControl1.Controls.Add(tabPageCarrito);
+            tabControl1.Controls.Add(tabPageEnvio);
+            tabControl1.Controls.Add(tabPagePago);
+            tabControl1.Controls.Add(tabPageConfirmacion);
+            tabControl1.Dock = DockStyle.Fill;
+            tabControl1.Location = new Point(0, 27);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(1350, 591);
+            tabControl1.TabIndex = 0;
             // 
             // tabPageCarrito
             // 
-            this.tabPageCarrito.Controls.Add(this.dgvCarrito);
-            this.tabPageCarrito.Location = new System.Drawing.Point(4, 29);
-            this.tabPageCarrito.Name = "tabPageCarrito";
-            this.tabPageCarrito.Padding = new System.Windows.Forms.Padding(10);
-            this.tabPageCarrito.Size = new System.Drawing.Size(1342, 566);
-            this.tabPageCarrito.TabIndex = 0;
-            this.tabPageCarrito.Text = "1. Carrito";
-            this.tabPageCarrito.UseVisualStyleBackColor = true;
-
+            tabPageCarrito.Controls.Add(dgvCarrito);
+            tabPageCarrito.Location = new Point(4, 29);
+            tabPageCarrito.Name = "tabPageCarrito";
+            tabPageCarrito.Padding = new Padding(10);
+            tabPageCarrito.Size = new Size(1342, 558);
+            tabPageCarrito.TabIndex = 0;
+            tabPageCarrito.Text = "1. Carrito";
+            tabPageCarrito.UseVisualStyleBackColor = true;
             // 
             // dgvCarrito
             // 
-            this.dgvCarrito.AllowUserToAddRows = false;
-            this.dgvCarrito.AllowUserToDeleteRows = false;
-            this.dgvCarrito.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvCarrito.ColumnHeadersHeight = 29;
-            this.dgvCarrito.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colProducto,
-            this.colPrecio,
-            this.colCantidad,
-            this.colSubtotal});
-            this.dgvCarrito.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvCarrito.Location = new System.Drawing.Point(10, 10);
-            this.dgvCarrito.Name = "dgvCarrito";
-            this.dgvCarrito.ReadOnly = true;
-            this.dgvCarrito.RowHeadersVisible = false;
-            this.dgvCarrito.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCarrito.Size = new System.Drawing.Size(1322, 546);
-            this.dgvCarrito.TabIndex = 0;
-
+            dgvCarrito.AllowUserToAddRows = false;
+            dgvCarrito.AllowUserToDeleteRows = false;
+            dgvCarrito.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvCarrito.ColumnHeadersHeight = 29;
+            dgvCarrito.Columns.AddRange(new DataGridViewColumn[] { colProducto, colPrecio, colCantidad, colSubtotal });
+            dgvCarrito.Dock = DockStyle.Fill;
+            dgvCarrito.Location = new Point(10, 10);
+            dgvCarrito.Name = "dgvCarrito";
+            dgvCarrito.ReadOnly = true;
+            dgvCarrito.RowHeadersVisible = false;
+            dgvCarrito.RowHeadersWidth = 51;
+            dgvCarrito.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvCarrito.Size = new Size(1322, 538);
+            dgvCarrito.TabIndex = 0;
             // 
             // colProducto
             // 
-            this.colProducto.DataPropertyName = "Producto";
-            this.colProducto.HeaderText = "Producto";
-            this.colProducto.MinimumWidth = 200;
-            this.colProducto.Name = "colProducto";
-            this.colProducto.ReadOnly = true;
-            this.colProducto.FillWeight = 50F;
-
+            colProducto.DataPropertyName = "Producto";
+            colProducto.FillWeight = 50F;
+            colProducto.HeaderText = "Producto";
+            colProducto.MinimumWidth = 200;
+            colProducto.Name = "colProducto";
+            colProducto.ReadOnly = true;
             // 
             // colPrecio
             // 
-            this.colPrecio.DataPropertyName = "Precio";
-            this.colPrecio.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.colPrecio.DefaultCellStyle.Format = "C2";
-            this.colPrecio.HeaderText = "Precio Unitario";
-            this.colPrecio.MinimumWidth = 100;
-            this.colPrecio.Name = "colPrecio";
-            this.colPrecio.ReadOnly = true;
-            this.colPrecio.FillWeight = 20F;
-
+            colPrecio.DataPropertyName = "Precio";
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle1.Format = "C2";
+            colPrecio.DefaultCellStyle = dataGridViewCellStyle1;
+            colPrecio.FillWeight = 20F;
+            colPrecio.HeaderText = "Precio Unitario";
+            colPrecio.MinimumWidth = 100;
+            colPrecio.Name = "colPrecio";
+            colPrecio.ReadOnly = true;
             // 
             // colCantidad
             // 
-            this.colCantidad.DataPropertyName = "Cantidad";
-            this.colCantidad.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colCantidad.HeaderText = "Cantidad";
-            this.colCantidad.MinimumWidth = 80;
-            this.colCantidad.Name = "colCantidad";
-            this.colCantidad.ReadOnly = true;
-            this.colCantidad.FillWeight = 15F;
-
+            colCantidad.DataPropertyName = "Cantidad";
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            colCantidad.DefaultCellStyle = dataGridViewCellStyle2;
+            colCantidad.FillWeight = 15F;
+            colCantidad.HeaderText = "Cantidad";
+            colCantidad.MinimumWidth = 80;
+            colCantidad.Name = "colCantidad";
+            colCantidad.ReadOnly = true;
             // 
             // colSubtotal
             // 
-            this.colSubtotal.DataPropertyName = "Subtotal";
-            this.colSubtotal.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.colSubtotal.DefaultCellStyle.Format = "C2";
-            this.colSubtotal.HeaderText = "Subtotal";
-            this.colSubtotal.MinimumWidth = 100;
-            this.colSubtotal.Name = "colSubtotal";
-            this.colSubtotal.ReadOnly = true;
-            this.colSubtotal.FillWeight = 20F;
-
+            colSubtotal.DataPropertyName = "Subtotal";
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle3.Format = "C2";
+            colSubtotal.DefaultCellStyle = dataGridViewCellStyle3;
+            colSubtotal.FillWeight = 20F;
+            colSubtotal.HeaderText = "Subtotal";
+            colSubtotal.MinimumWidth = 100;
+            colSubtotal.Name = "colSubtotal";
+            colSubtotal.ReadOnly = true;
             // 
             // tabPageEnvio
             // 
-            this.tabPageEnvio.Controls.Add(this.tlpEnvio);
-            this.tabPageEnvio.Location = new System.Drawing.Point(4, 29);
-            this.tabPageEnvio.Name = "tabPageEnvio";
-            this.tabPageEnvio.Padding = new System.Windows.Forms.Padding(20);
-            this.tabPageEnvio.Size = new System.Drawing.Size(1342, 566);
-            this.tabPageEnvio.TabIndex = 1;
-            this.tabPageEnvio.Text = "2. Envío";
-            this.tabPageEnvio.UseVisualStyleBackColor = true;
-
+            tabPageEnvio.Controls.Add(tlpEnvio);
+            tabPageEnvio.Location = new Point(4, 29);
+            tabPageEnvio.Name = "tabPageEnvio";
+            tabPageEnvio.Padding = new Padding(20);
+            tabPageEnvio.Size = new Size(1342, 566);
+            tabPageEnvio.TabIndex = 1;
+            tabPageEnvio.Text = "2. Envío";
+            tabPageEnvio.UseVisualStyleBackColor = true;
             // 
             // tlpEnvio
             // 
-            this.tlpEnvio.ColumnCount = 4;
-            this.tlpEnvio.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.tlpEnvio.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpEnvio.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.tlpEnvio.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpEnvio.Controls.Add(this.lblNombre, 0, 0);
-            this.tlpEnvio.Controls.Add(this.txtNombre, 1, 0);
-            this.tlpEnvio.Controls.Add(this.lblTelefono, 2, 0);
-            this.tlpEnvio.Controls.Add(this.txtTelefono, 3, 0);
-            this.tlpEnvio.Controls.Add(this.lblDireccion, 0, 1);
-            this.tlpEnvio.Controls.Add(this.txtDireccion, 1, 1);
-            this.tlpEnvio.Controls.Add(this.lblCiudad, 2, 1);
-            this.tlpEnvio.Controls.Add(this.txtCiudad, 3, 1);
-            this.tlpEnvio.Controls.Add(this.lblCP, 0, 2);
-            this.tlpEnvio.Controls.Add(this.txtCP, 1, 2);
-            this.tlpEnvio.Controls.Add(this.lblFranja, 2, 2);
-            this.tlpEnvio.Controls.Add(this.cboFranja, 3, 2);
-            this.tlpEnvio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tlpEnvio.Location = new System.Drawing.Point(20, 20);
-            this.tlpEnvio.Name = "tlpEnvio";
-            this.tlpEnvio.RowCount = 3;
-            this.tlpEnvio.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tlpEnvio.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tlpEnvio.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tlpEnvio.Size = new System.Drawing.Size(1302, 120);
-            this.tlpEnvio.TabIndex = 0;
-
+            tlpEnvio.ColumnCount = 4;
+            tlpEnvio.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 120F));
+            tlpEnvio.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tlpEnvio.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 120F));
+            tlpEnvio.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tlpEnvio.Controls.Add(lblNombre, 0, 0);
+            tlpEnvio.Controls.Add(txtNombre, 1, 0);
+            tlpEnvio.Controls.Add(lblTelefono, 2, 0);
+            tlpEnvio.Controls.Add(txtTelefono, 3, 0);
+            tlpEnvio.Controls.Add(lblDireccion, 0, 1);
+            tlpEnvio.Controls.Add(txtDireccion, 1, 1);
+            tlpEnvio.Controls.Add(lblCiudad, 2, 1);
+            tlpEnvio.Controls.Add(txtCiudad, 3, 1);
+            tlpEnvio.Controls.Add(lblCP, 0, 2);
+            tlpEnvio.Controls.Add(txtCP, 1, 2);
+            tlpEnvio.Controls.Add(lblFranja, 2, 2);
+            tlpEnvio.Controls.Add(cboFranja, 3, 2);
+            tlpEnvio.Dock = DockStyle.Top;
+            tlpEnvio.Location = new Point(20, 20);
+            tlpEnvio.Name = "tlpEnvio";
+            tlpEnvio.RowCount = 3;
+            tlpEnvio.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
+            tlpEnvio.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
+            tlpEnvio.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
+            tlpEnvio.Size = new Size(1302, 120);
+            tlpEnvio.TabIndex = 0;
             // 
             // lblNombre
             // 
-            this.lblNombre.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(3, 10);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(107, 20);
-            this.lblNombre.TabIndex = 0;
-            this.lblNombre.Text = "&Nombre completo:";
-
+            lblNombre.Anchor = AnchorStyles.Left;
+            lblNombre.AutoSize = true;
+            lblNombre.Location = new Point(3, 0);
+            lblNombre.Name = "lblNombre";
+            lblNombre.Size = new Size(76, 40);
+            lblNombre.TabIndex = 0;
+            lblNombre.Text = "&Nombre completo:";
             // 
             // txtNombre
             // 
-            this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombre.Location = new System.Drawing.Point(123, 6);
-            this.txtNombre.MaxLength = 100;
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.PlaceholderText = "Juan Pérez";
-            this.txtNombre.Size = new System.Drawing.Size(525, 27);
-            this.txtNombre.TabIndex = 1;
-
+            txtNombre.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            txtNombre.Location = new Point(123, 6);
+            txtNombre.MaxLength = 100;
+            txtNombre.Name = "txtNombre";
+            txtNombre.PlaceholderText = "Juan Pérez";
+            txtNombre.Size = new Size(525, 27);
+            txtNombre.TabIndex = 1;
             // 
             // lblTelefono
             // 
-            this.lblTelefono.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Location = new System.Drawing.Point(654, 10);
-            this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(70, 20);
-            this.lblTelefono.TabIndex = 2;
-            this.lblTelefono.Text = "&Teléfono:";
-
+            lblTelefono.Anchor = AnchorStyles.Left;
+            lblTelefono.AutoSize = true;
+            lblTelefono.Location = new Point(654, 10);
+            lblTelefono.Name = "lblTelefono";
+            lblTelefono.Size = new Size(70, 20);
+            lblTelefono.TabIndex = 2;
+            lblTelefono.Text = "&Teléfono:";
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTelefono.Location = new System.Drawing.Point(774, 6);
-            this.txtTelefono.MaxLength = 20;
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.PlaceholderText = "11-1234-5678";
-            this.txtTelefono.Size = new System.Drawing.Size(525, 27);
-            this.txtTelefono.TabIndex = 3;
-
+            txtTelefono.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            txtTelefono.Location = new Point(774, 6);
+            txtTelefono.MaxLength = 20;
+            txtTelefono.Name = "txtTelefono";
+            txtTelefono.PlaceholderText = "11-1234-5678";
+            txtTelefono.Size = new Size(525, 27);
+            txtTelefono.TabIndex = 3;
             // 
             // lblDireccion
             // 
-            this.lblDireccion.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblDireccion.AutoSize = true;
-            this.lblDireccion.Location = new System.Drawing.Point(3, 50);
-            this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(75, 20);
-            this.lblDireccion.TabIndex = 4;
-            this.lblDireccion.Text = "&Dirección:";
-
+            lblDireccion.Anchor = AnchorStyles.Left;
+            lblDireccion.AutoSize = true;
+            lblDireccion.Location = new Point(3, 50);
+            lblDireccion.Name = "lblDireccion";
+            lblDireccion.Size = new Size(75, 20);
+            lblDireccion.TabIndex = 4;
+            lblDireccion.Text = "&Dirección:";
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDireccion.Location = new System.Drawing.Point(123, 46);
-            this.txtDireccion.MaxLength = 150;
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.PlaceholderText = "Av. Corrientes 1234, Piso 5, Depto A";
-            this.txtDireccion.Size = new System.Drawing.Size(525, 27);
-            this.txtDireccion.TabIndex = 5;
-
+            txtDireccion.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            txtDireccion.Location = new Point(123, 46);
+            txtDireccion.MaxLength = 150;
+            txtDireccion.Name = "txtDireccion";
+            txtDireccion.PlaceholderText = "Av. Corrientes 1234, Piso 5, Depto A";
+            txtDireccion.Size = new Size(525, 27);
+            txtDireccion.TabIndex = 5;
             // 
             // lblCiudad
             // 
-            this.lblCiudad.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblCiudad.AutoSize = true;
-            this.lblCiudad.Location = new System.Drawing.Point(654, 50);
-            this.lblCiudad.Name = "lblCiudad";
-            this.lblCiudad.Size = new System.Drawing.Size(59, 20);
-            this.lblCiudad.TabIndex = 6;
-            this.lblCiudad.Text = "&Ciudad:";
-
+            lblCiudad.Anchor = AnchorStyles.Left;
+            lblCiudad.AutoSize = true;
+            lblCiudad.Location = new Point(654, 50);
+            lblCiudad.Name = "lblCiudad";
+            lblCiudad.Size = new Size(59, 20);
+            lblCiudad.TabIndex = 6;
+            lblCiudad.Text = "&Ciudad:";
             // 
             // txtCiudad
             // 
-            this.txtCiudad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCiudad.Location = new System.Drawing.Point(774, 46);
-            this.txtCiudad.MaxLength = 50;
-            this.txtCiudad.Name = "txtCiudad";
-            this.txtCiudad.PlaceholderText = "Buenos Aires";
-            this.txtCiudad.Size = new System.Drawing.Size(525, 27);
-            this.txtCiudad.TabIndex = 7;
-
+            txtCiudad.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            txtCiudad.Location = new Point(774, 46);
+            txtCiudad.MaxLength = 50;
+            txtCiudad.Name = "txtCiudad";
+            txtCiudad.PlaceholderText = "Buenos Aires";
+            txtCiudad.Size = new Size(525, 27);
+            txtCiudad.TabIndex = 7;
             // 
             // lblCP
             // 
-            this.lblCP.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblCP.AutoSize = true;
-            this.lblCP.Location = new System.Drawing.Point(3, 90);
-            this.lblCP.Name = "lblCP";
-            this.lblCP.Size = new System.Drawing.Size(102, 20);
-            this.lblCP.TabIndex = 8;
-            this.lblCP.Text = "&Código Postal:";
-
+            lblCP.Anchor = AnchorStyles.Left;
+            lblCP.AutoSize = true;
+            lblCP.Location = new Point(3, 90);
+            lblCP.Name = "lblCP";
+            lblCP.Size = new Size(104, 20);
+            lblCP.TabIndex = 8;
+            lblCP.Text = "&Código Postal:";
             // 
             // txtCP
             // 
-            this.txtCP.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtCP.Location = new System.Drawing.Point(123, 86);
-            this.txtCP.MaxLength = 10;
-            this.txtCP.Name = "txtCP";
-            this.txtCP.PlaceholderText = "C1425";
-            this.txtCP.Size = new System.Drawing.Size(120, 27);
-            this.txtCP.TabIndex = 9;
-
+            txtCP.Anchor = AnchorStyles.Left;
+            txtCP.Location = new Point(123, 86);
+            txtCP.MaxLength = 10;
+            txtCP.Name = "txtCP";
+            txtCP.PlaceholderText = "C1425";
+            txtCP.Size = new Size(120, 27);
+            txtCP.TabIndex = 9;
             // 
             // lblFranja
             // 
-            this.lblFranja.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblFranja.AutoSize = true;
-            this.lblFranja.Location = new System.Drawing.Point(654, 90);
-            this.lblFranja.Name = "lblFranja";
-            this.lblFranja.Size = new System.Drawing.Size(105, 20);
-            this.lblFranja.TabIndex = 10;
-            this.lblFranja.Text = "&Franja horaria:";
-
+            lblFranja.Anchor = AnchorStyles.Left;
+            lblFranja.AutoSize = true;
+            lblFranja.Location = new Point(654, 90);
+            lblFranja.Name = "lblFranja";
+            lblFranja.Size = new Size(103, 20);
+            lblFranja.TabIndex = 10;
+            lblFranja.Text = "&Franja horaria:";
             // 
             // cboFranja
             // 
-            this.cboFranja.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cboFranja.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboFranja.Items.AddRange(new object[] {
-            "Mañana (9:00 - 12:00)",
-            "Tarde (14:00 - 18:00)",
-            "Noche (18:00 - 21:00)"});
-            this.cboFranja.Location = new System.Drawing.Point(774, 86);
-            this.cboFranja.Name = "cboFranja";
-            this.cboFranja.Size = new System.Drawing.Size(525, 28);
-            this.cboFranja.TabIndex = 11;
-
+            cboFranja.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            cboFranja.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboFranja.Items.AddRange(new object[] { "Mañana (9:00 - 12:00)", "Tarde (14:00 - 18:00)", "Noche (18:00 - 21:00)" });
+            cboFranja.Location = new Point(774, 86);
+            cboFranja.Name = "cboFranja";
+            cboFranja.Size = new Size(525, 28);
+            cboFranja.TabIndex = 11;
             // 
             // tabPagePago
             // 
-            this.tabPagePago.Controls.Add(this.tlpPago);
-            this.tabPagePago.Location = new System.Drawing.Point(4, 29);
-            this.tabPagePago.Name = "tabPagePago";
-            this.tabPagePago.Padding = new System.Windows.Forms.Padding(20);
-            this.tabPagePago.Size = new System.Drawing.Size(1342, 566);
-            this.tabPagePago.TabIndex = 2;
-            this.tabPagePago.Text = "3. Pago";
-            this.tabPagePago.UseVisualStyleBackColor = true;
-
+            tabPagePago.Controls.Add(tlpPago);
+            tabPagePago.Location = new Point(4, 29);
+            tabPagePago.Name = "tabPagePago";
+            tabPagePago.Padding = new Padding(20);
+            tabPagePago.Size = new Size(1342, 566);
+            tabPagePago.TabIndex = 2;
+            tabPagePago.Text = "3. Pago";
+            tabPagePago.UseVisualStyleBackColor = true;
             // 
             // tlpPago
             // 
-            this.tlpPago.ColumnCount = 4;
-            this.tlpPago.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.tlpPago.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpPago.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.tlpPago.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpPago.Controls.Add(this.lblMetodo, 0, 0);
-            this.tlpPago.Controls.Add(this.cboMetodo, 1, 0);
-            this.tlpPago.Controls.Add(this.lblNum, 2, 0);
-            this.tlpPago.Controls.Add(this.txtNum, 3, 0);
-            this.tlpPago.Controls.Add(this.lblCuotas, 0, 1);
-            this.tlpPago.Controls.Add(this.cboCuotas, 1, 1);
-            this.tlpPago.Controls.Add(this.lblFactura, 2, 1);
-            this.tlpPago.Controls.Add(this.cboFactura, 3, 1);
-            this.tlpPago.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tlpPago.Location = new System.Drawing.Point(20, 20);
-            this.tlpPago.Name = "tlpPago";
-            this.tlpPago.RowCount = 2;
-            this.tlpPago.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tlpPago.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tlpPago.Size = new System.Drawing.Size(1302, 80);
-            this.tlpPago.TabIndex = 0;
-
+            tlpPago.ColumnCount = 4;
+            tlpPago.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 120F));
+            tlpPago.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tlpPago.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 120F));
+            tlpPago.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tlpPago.Controls.Add(lblMetodo, 0, 0);
+            tlpPago.Controls.Add(cboMetodo, 1, 0);
+            tlpPago.Controls.Add(lblNum, 2, 0);
+            tlpPago.Controls.Add(txtNum, 3, 0);
+            tlpPago.Controls.Add(lblCuotas, 0, 1);
+            tlpPago.Controls.Add(cboCuotas, 1, 1);
+            tlpPago.Controls.Add(lblFactura, 2, 1);
+            tlpPago.Controls.Add(cboFactura, 3, 1);
+            tlpPago.Dock = DockStyle.Top;
+            tlpPago.Location = new Point(20, 20);
+            tlpPago.Name = "tlpPago";
+            tlpPago.RowCount = 2;
+            tlpPago.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
+            tlpPago.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
+            tlpPago.Size = new Size(1302, 80);
+            tlpPago.TabIndex = 0;
             // 
             // lblMetodo
             // 
-            this.lblMetodo.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblMetodo.AutoSize = true;
-            this.lblMetodo.Location = new System.Drawing.Point(3, 10);
-            this.lblMetodo.Name = "lblMetodo";
-            this.lblMetodo.Size = new System.Drawing.Size(110, 20);
-            this.lblMetodo.TabIndex = 0;
-            this.lblMetodo.Text = "&Método de pago:";
-
+            lblMetodo.Anchor = AnchorStyles.Left;
+            lblMetodo.AutoSize = true;
+            lblMetodo.Location = new Point(3, 0);
+            lblMetodo.Name = "lblMetodo";
+            lblMetodo.Size = new Size(87, 40);
+            lblMetodo.TabIndex = 0;
+            lblMetodo.Text = "&Método de pago:";
             // 
             // cboMetodo
             // 
-            this.cboMetodo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cboMetodo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboMetodo.Items.AddRange(new object[] {
-            "Tarjeta de Crédito",
-            "Tarjeta de Débito",
-            "Transferencia Bancaria",
-            "Mercado Pago",
-            "Efectivo contra entrega"});
-            this.cboMetodo.Location = new System.Drawing.Point(123, 6);
-            this.cboMetodo.Name = "cboMetodo";
-            this.cboMetodo.Size = new System.Drawing.Size(525, 28);
-            this.cboMetodo.TabIndex = 1;
-
+            cboMetodo.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            cboMetodo.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboMetodo.Items.AddRange(new object[] { "Tarjeta de Crédito", "Tarjeta de Débito", "Transferencia Bancaria", "Mercado Pago", "Efectivo contra entrega" });
+            cboMetodo.Location = new Point(123, 6);
+            cboMetodo.Name = "cboMetodo";
+            cboMetodo.Size = new Size(525, 28);
+            cboMetodo.TabIndex = 1;
             // 
             // lblNum
             // 
-            this.lblNum.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblNum.AutoSize = true;
-            this.lblNum.Location = new System.Drawing.Point(654, 10);
-            this.lblNum.Name = "lblNum";
-            this.lblNum.Size = new System.Drawing.Size(92, 20);
-            this.lblNum.TabIndex = 2;
-            this.lblNum.Text = "&Nº de tarjeta:";
-
+            lblNum.Anchor = AnchorStyles.Left;
+            lblNum.AutoSize = true;
+            lblNum.Location = new Point(654, 10);
+            lblNum.Name = "lblNum";
+            lblNum.Size = new Size(97, 20);
+            lblNum.TabIndex = 2;
+            lblNum.Text = "&Nº de tarjeta:";
             // 
             // txtNum
             // 
-            this.txtNum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNum.Location = new System.Drawing.Point(774, 6);
-            this.txtNum.MaxLength = 19;
-            this.txtNum.Name = "txtNum";
-            this.txtNum.PasswordChar = '*';
-            this.txtNum.PlaceholderText = "1234 5678 9012 3456";
-            this.txtNum.Size = new System.Drawing.Size(525, 27);
-            this.txtNum.TabIndex = 3;
-
+            txtNum.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            txtNum.Location = new Point(774, 6);
+            txtNum.MaxLength = 19;
+            txtNum.Name = "txtNum";
+            txtNum.PasswordChar = '*';
+            txtNum.PlaceholderText = "1234 5678 9012 3456";
+            txtNum.Size = new Size(525, 27);
+            txtNum.TabIndex = 3;
             // 
             // lblCuotas
             // 
-            this.lblCuotas.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblCuotas.AutoSize = true;
-            this.lblCuotas.Location = new System.Drawing.Point(3, 50);
-            this.lblCuotas.Name = "lblCuotas";
-            this.lblCuotas.Size = new System.Drawing.Size(54, 20);
-            this.lblCuotas.TabIndex = 4;
-            this.lblCuotas.Text = "&Cuotas:";
-
+            lblCuotas.Anchor = AnchorStyles.Left;
+            lblCuotas.AutoSize = true;
+            lblCuotas.Location = new Point(3, 50);
+            lblCuotas.Name = "lblCuotas";
+            lblCuotas.Size = new Size(57, 20);
+            lblCuotas.TabIndex = 4;
+            lblCuotas.Text = "&Cuotas:";
             // 
             // cboCuotas
             // 
-            this.cboCuotas.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.cboCuotas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboCuotas.Items.AddRange(new object[] {
-            "1 cuota sin interés",
-            "3 cuotas sin interés",
-            "6 cuotas con 5% interés",
-            "12 cuotas con 15% interés",
-            "18 cuotas con 25% interés"});
-            this.cboCuotas.Location = new System.Drawing.Point(123, 46);
-            this.cboCuotas.Name = "cboCuotas";
-            this.cboCuotas.Size = new System.Drawing.Size(200, 28);
-            this.cboCuotas.TabIndex = 5;
-
+            cboCuotas.Anchor = AnchorStyles.Left;
+            cboCuotas.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboCuotas.Items.AddRange(new object[] { "1 cuota sin interés", "3 cuotas sin interés", "6 cuotas con 5% interés", "12 cuotas con 15% interés", "18 cuotas con 25% interés" });
+            cboCuotas.Location = new Point(123, 46);
+            cboCuotas.Name = "cboCuotas";
+            cboCuotas.Size = new Size(200, 28);
+            cboCuotas.TabIndex = 5;
             // 
             // lblFactura
             // 
-            this.lblFactura.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblFactura.AutoSize = true;
-            this.lblFactura.Location = new System.Drawing.Point(654, 50);
-            this.lblFactura.Name = "lblFactura";
-            this.lblFactura.Size = new System.Drawing.Size(99, 20);
-            this.lblFactura.TabIndex = 6;
-            this.lblFactura.Text = "Tipo de &factura:";
-
+            lblFactura.Anchor = AnchorStyles.Left;
+            lblFactura.AutoSize = true;
+            lblFactura.Location = new Point(654, 50);
+            lblFactura.Name = "lblFactura";
+            lblFactura.Size = new Size(113, 20);
+            lblFactura.TabIndex = 6;
+            lblFactura.Text = "Tipo de &factura:";
             // 
             // cboFactura
             // 
-            this.cboFactura.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.cboFactura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboFactura.Items.AddRange(new object[] {
-            "Consumidor Final (Factura B)",
-            "Responsable Inscripto (Factura A)",
-            "Monotributista (Factura B)",
-            "Exento (Factura C)"});
-            this.cboFactura.Location = new System.Drawing.Point(774, 46);
-            this.cboFactura.Name = "cboFactura";
-            this.cboFactura.Size = new System.Drawing.Size(200, 28);
-            this.cboFactura.TabIndex = 7;
-
+            cboFactura.Anchor = AnchorStyles.Left;
+            cboFactura.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboFactura.Items.AddRange(new object[] { "Consumidor Final (Factura B)", "Responsable Inscripto (Factura A)", "Monotributista (Factura B)", "Exento (Factura C)" });
+            cboFactura.Location = new Point(774, 46);
+            cboFactura.Name = "cboFactura";
+            cboFactura.Size = new Size(200, 28);
+            cboFactura.TabIndex = 7;
             // 
             // tabPageConfirmacion
             // 
-            this.tabPageConfirmacion.Controls.Add(this.rtbConfirmacion);
-            this.tabPageConfirmacion.Location = new System.Drawing.Point(4, 29);
-            this.tabPageConfirmacion.Name = "tabPageConfirmacion";
-            this.tabPageConfirmacion.Padding = new System.Windows.Forms.Padding(20);
-            this.tabPageConfirmacion.Size = new System.Drawing.Size(1342, 566);
-            this.tabPageConfirmacion.TabIndex = 3;
-            this.tabPageConfirmacion.Text = "4. Confirmación";
-            this.tabPageConfirmacion.UseVisualStyleBackColor = true;
-
+            tabPageConfirmacion.Controls.Add(rtbConfirmacion);
+            tabPageConfirmacion.Location = new Point(4, 29);
+            tabPageConfirmacion.Name = "tabPageConfirmacion";
+            tabPageConfirmacion.Padding = new Padding(20);
+            tabPageConfirmacion.Size = new Size(1342, 566);
+            tabPageConfirmacion.TabIndex = 3;
+            tabPageConfirmacion.Text = "4. Confirmación";
+            tabPageConfirmacion.UseVisualStyleBackColor = true;
             // 
             // rtbConfirmacion
             // 
-            this.rtbConfirmacion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbConfirmacion.Font = new System.Drawing.Font("Consolas", 10F);
-            this.rtbConfirmacion.Location = new System.Drawing.Point(20, 20);
-            this.rtbConfirmacion.Name = "rtbConfirmacion";
-            this.rtbConfirmacion.ReadOnly = true;
-            this.rtbConfirmacion.Size = new System.Drawing.Size(1302, 526);
-            this.rtbConfirmacion.TabIndex = 0;
-            this.rtbConfirmacion.Text = "Aquí se mostrará el resumen completo de su pedido...";
-
+            rtbConfirmacion.Dock = DockStyle.Fill;
+            rtbConfirmacion.Font = new Font("Consolas", 10F);
+            rtbConfirmacion.Location = new Point(20, 20);
+            rtbConfirmacion.Name = "rtbConfirmacion";
+            rtbConfirmacion.ReadOnly = true;
+            rtbConfirmacion.Size = new Size(1302, 526);
+            rtbConfirmacion.TabIndex = 0;
+            rtbConfirmacion.Text = "Aquí se mostrará el resumen completo de su pedido...";
             // 
             // panelBottom
             // 
-            this.panelBottom.Controls.Add(this.flowBottom);
-            this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBottom.Location = new System.Drawing.Point(0, 626);
-            this.panelBottom.Name = "panelBottom";
-            this.panelBottom.Padding = new System.Windows.Forms.Padding(10);
-            this.panelBottom.Size = new System.Drawing.Size(1350, 48);
-            this.panelBottom.TabIndex = 1;
-
+            panelBottom.Controls.Add(flowBottom);
+            panelBottom.Dock = DockStyle.Bottom;
+            panelBottom.Location = new Point(0, 618);
+            panelBottom.Name = "panelBottom";
+            panelBottom.Padding = new Padding(10);
+            panelBottom.Size = new Size(1350, 56);
+            panelBottom.TabIndex = 1;
             // 
             // flowBottom
             // 
-            this.flowBottom.Controls.Add(this.btnConfirmar);
-            this.flowBottom.Controls.Add(this.btnCancelar);
-            this.flowBottom.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowBottom.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowBottom.Location = new System.Drawing.Point(1168, 10);
-            this.flowBottom.Name = "flowBottom";
-            this.flowBottom.Size = new System.Drawing.Size(172, 28);
-            this.flowBottom.TabIndex = 0;
-            this.flowBottom.WrapContents = false;
-
+            flowBottom.Controls.Add(btnConfirmar);
+            flowBottom.Controls.Add(btnCancelar);
+            flowBottom.Dock = DockStyle.Right;
+            flowBottom.FlowDirection = FlowDirection.RightToLeft;
+            flowBottom.Location = new Point(1168, 10);
+            flowBottom.Name = "flowBottom";
+            flowBottom.Size = new Size(172, 36);
+            flowBottom.TabIndex = 0;
+            flowBottom.WrapContents = false;
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.AutoSize = true;
-            this.btnConfirmar.Location = new System.Drawing.Point(85, 3);
-            this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(84, 30);
-            this.btnConfirmar.TabIndex = 0;
-            this.btnConfirmar.Text = "&Confirmar";
-            this.btnConfirmar.UseVisualStyleBackColor = true;
-
+            btnConfirmar.AutoSize = true;
+            btnConfirmar.Location = new Point(84, 3);
+            btnConfirmar.Name = "btnConfirmar";
+            btnConfirmar.Size = new Size(85, 30);
+            btnConfirmar.TabIndex = 0;
+            btnConfirmar.Text = "&Confirmar";
+            btnConfirmar.UseVisualStyleBackColor = true;
             // 
             // btnCancelar
             // 
-            this.btnCancelar.AutoSize = true;
-            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Location = new System.Drawing.Point(3, 3);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(76, 30);
-            this.btnCancelar.TabIndex = 1;
-            this.btnCancelar.Text = "C&ancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-
+            btnCancelar.AutoSize = true;
+            btnCancelar.DialogResult = DialogResult.Cancel;
+            btnCancelar.Location = new Point(2, 3);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(76, 30);
+            btnCancelar.TabIndex = 1;
+            btnCancelar.Text = "C&ancelar";
+            btnCancelar.UseVisualStyleBackColor = true;
             // 
             // Checkout
             // 
-            this.AcceptButton = this.btnConfirmar;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.btnCancelar;
-            this.ClientSize = new System.Drawing.Size(1350, 700);
-            this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.panelBottom);
-            this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.statusStrip1);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.MinimumSize = new System.Drawing.Size(800, 600);
-            this.Name = "Checkout";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ClickStore - Finalizar Compra";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPageCarrito.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCarrito)).EndInit();
-            this.tabPageEnvio.ResumeLayout(false);
-            this.tlpEnvio.ResumeLayout(false);
-            this.tlpEnvio.PerformLayout();
-            this.tabPagePago.ResumeLayout(false);
-            this.tlpPago.ResumeLayout(false);
-            this.tlpPago.PerformLayout();
-            this.tabPageConfirmacion.ResumeLayout(false);
-            this.panelBottom.ResumeLayout(false);
-            this.flowBottom.ResumeLayout(false);
-            this.flowBottom.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AcceptButton = btnConfirmar;
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            CancelButton = btnCancelar;
+            ClientSize = new Size(1350, 700);
+            Controls.Add(tabControl1);
+            Controls.Add(panelBottom);
+            Controls.Add(toolStrip1);
+            Controls.Add(statusStrip1);
+            Font = new Font("Segoe UI", 9F);
+            MinimumSize = new Size(800, 600);
+            Name = "Checkout";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "ClickStore - Finalizar Compra";
+            WindowState = FormWindowState.Maximized;
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
+            tabControl1.ResumeLayout(false);
+            tabPageCarrito.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvCarrito).EndInit();
+            tabPageEnvio.ResumeLayout(false);
+            tlpEnvio.ResumeLayout(false);
+            tlpEnvio.PerformLayout();
+            tabPagePago.ResumeLayout(false);
+            tlpPago.ResumeLayout(false);
+            tlpPago.PerformLayout();
+            tabPageConfirmacion.ResumeLayout(false);
+            panelBottom.ResumeLayout(false);
+            flowBottom.ResumeLayout(false);
+            flowBottom.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
     }
 }
